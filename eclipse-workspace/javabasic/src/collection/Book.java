@@ -11,6 +11,7 @@ public class Book {
 	String publisher;
 	int quantity;
 	
+	
 	Book(String Bname,String authName,String publisher,int quan){
 		
 		this.bookName=Bname;
@@ -20,18 +21,18 @@ public class Book {
 		
 		
 	}
+	
 
 	public static void main(String[] args) {
 		
 		Book b1=new Book("redinmartin","xyz","abc",4);
 		Book b2=new Book("redin","ccxyz","abccc",4);
-		
+	
 	  
 		HashMap<Integer,Book> bookdetails = new HashMap<>();
 		bookdetails.put(1,b1);
 		bookdetails.put(2, b2);
-		System.out.println(bookdetails.entrySet());
-		
+	
 		for(HashMap.Entry<Integer, Book> entry:bookdetails.entrySet())
 	    {    
 	        
